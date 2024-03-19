@@ -1,0 +1,118 @@
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
+.page{
+    width: 1100px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 23px;
+    align-self: baseline;
+    justify-self: start;
+    padding-left: 120px;
+}
+
+.navbar{
+    width: 1100px;
+    position: fixed;
+    background-color: #292929;
+    color: white;
+    height: 120px;
+    align-content: space-around;
+
+}
+
+.navbar-brand{
+
+    color: white;
+    text-align: start;
+}
+
+.subnav{
+    background-color: #292929;
+    height: 40px;
+    width: 100%;
+    align-content: start;
+    padding-left: 120px;
+    padding-top: 5px;
+    margin-bottom: -10px;
+
+}
+
+.news{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 150px;
+    width: 1100px;
+    height: 30px;  
+}
+
+.news-div{
+    width: 100%;
+    height: 30px;
+    color: white; 
+    padding-left: 10px;
+    background: linear-gradient(blue 2px, rgb(58, 4, 58) 2px, rgb(13, 6, 82));
+}
+
+
+/* Animation for the logo: */
+.logoanimation{
+    height: 100px;
+    width: 100px; 
+    margin-bottom: -100px;
+}
+
+.logo{
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100px; 
+    transform-style: preserve-3d;
+    transform: rotateY(360deg) rotateX(-180deg);
+    transition: 800ms ease-in;
+}
+
+.logo:hover{
+    transform: rotateY(90deg) rotateX(0deg);
+}
+
+.logo div{
+    position: absolute;
+    height: 100px;
+    width: 100px; 
+    background-color: #4a6da7;
+    background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/ct/7daa2ed27f/images/siteLogo-jworg-large.svg);
+    background-size: 105px 95px;
+}
+
+.logo div:nth-child(1){
+    transform: translateZ(50px) rotate(180deg); 
+}
+
+.logo div:nth-child(2){
+    transform: rotateX(180deg) translateZ(50px);
+}
+
+.logo div:nth-child(3){
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.logo div:nth-child(4){
+    transform: rotateY(90deg) rotate(180deg) translateZ(50px);
+        
+}
+
+.logo div:nth-child(5){
+    transform: rotateX(90deg) rotate(0deg) translateZ(50px);
+      
+}
+
+.logo div:nth-child(6){
+    transform: rotateX(-90deg) translateZ(50px);    
+}
+/* Animation for the logo ends here! */
