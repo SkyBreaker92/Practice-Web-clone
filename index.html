@@ -15,7 +15,7 @@
         <div class="page">
            
 
-        <nav class="navbar" style="background-color: #111010;">
+        <nav class="mainnav navbar" style="background-color: #111010;">
             <div class="logoanimation">
                 <!-- logo link always in front of animation: -->
                 <a href="index.html" style="z-index:auto;">
@@ -35,10 +35,9 @@
                 </div>
                 </a>
             </div>
-            <div class="container-fluid" style="justify-content: flex-start; margin: 0 0;">
-                
+            <div class="container-fluid">
                 <h2 class="title">Jehovah’s Witnesses</h2>
-                    <form class="d-flex" role="search" style="margin-left: auto;">
+                <form class="d-flex form1" role="search">
                     <button class="btn btn-sm btn-outline-secondary" type="button">
                         <span class="icon">&#x1F523;</span> 
                         <span class="btn-text">Language</span>
@@ -52,70 +51,59 @@
                         <span class="icon">&#128269;</span>
                         <span class="btn-text">Search</span>
                     </button>
-
                 </form>
             </div>
-
-            
-            
-
-            <div class="subnav">
-                <a class="navbar-brand" href="index.html">Home</a>
-                <a class="navbar-brand" href="index.html">Bible Teachings</a>
-                <a class="navbar-brand" href="index.html">Library</a>
-                <a class="navbar-brand" href="index.html">News</a>
-                <a class="navbar-brand" href="index.html">About Us</a>
-            </div>
+            <!-- 2nd nav with dropdown menu --> 
+                <nav class="nav2 subnav navbar navbar-dark bg-dark navbar-expand-md">
+                  <div class="subnav container-fluid justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" style="max-height: 30px;">
+                      <span class="navbar-toggler-icon" style="height: 20px;"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" >
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="navbar-brand" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">Bible Teachings</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">Library</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">News</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>   
         </nav>
-
-        <nav class="nav2 navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
-
         <section>
             <div class="news">
                 <a class="news-div" href="#">NEWS HERE | New videos and mooooore!</a>
             </div>
         </section>
        
+
+
+
         </div>
     </header>
     

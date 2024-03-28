@@ -17,7 +17,12 @@ body{
     margin-top: 5px;
 }
 
-.navbar{
+.form1{
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.mainnav{
     width: 1100px;
     position: fixed;
     background-color: #292929;
@@ -27,22 +32,17 @@ body{
 
 }
 
-.navbar-brand{
-
-    color: white;
-    text-align: start;
-}
-
 .subnav{
     display: flex;
+    position:unset;
     background-color: #292929;
-    height: 40px;
-    width: 100%;
-    justify-content: space-evenly;
-    align-content: center;
-    padding-left: 80px;
-    margin-bottom: -px;
+    height: 35px;
+    width: 100%;  
+    justify-content: center;
+    align-content: center;  
 }
+
+
 
 .news{
     display: flex;
@@ -74,10 +74,6 @@ body{
 .form-control{
     max-height: 40px;
     align-self: center;
-}
-
-.nav2{
-    display: none;
 }
 
 
@@ -146,7 +142,7 @@ body{
 		width:100%;
         margin: 0 auto;
 		}
-    .navbar{
+    .mainnav{
         width:100%;
         margin: 0 auto;
         position: relative;
@@ -162,7 +158,7 @@ body{
     }
 }
 @media screen and (max-width:900px) {
-    .navbar{
+    .mainnav{
         width:100%;
         height: 70px;
         margin: 0 auto;
@@ -170,21 +166,34 @@ body{
     }
     .title{
         padding-left: 85px;
+        margin-top: 20px;
     }
+    .btn{
+        min-height: 30px;
+        margin: 0px 5px;
+    }
+    .subnav{
+        height: 30px;
+    }
+
     .btn-text{
         display: none;
     }
     .form-control{
         display: none;
     }
-    .subnav{
-        display: none;
+
+    .news{
+        margin-top: 8px;
+        height: 25px;  
+    }
+    .news-div{
+        height: 100%;
     }
 
     .logoanimation{
         height: 60px;
         width: 60px; 
-        margin-bottom: -55px;
         margin-left: 10px;
     }
     .logo{
@@ -226,3 +235,21 @@ body{
         }
 }
 
+@media screen and (max-width:480px) {
+ .title{
+    display:none;
+}
+.form1{
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+.logoanimation{
+    margin-top: -50px;
+}
+.news{
+    margin-top: 0px;
+}
+.offcanvas{
+    --bs-offcanvas-width: 100%;
+}
+}
