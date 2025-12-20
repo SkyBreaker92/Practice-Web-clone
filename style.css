@@ -73,11 +73,22 @@ body{
     margin-bottom: -100px;
     z-index: 5;
 }
+.logostatic{
+    position: absolute;
+    background: url(https://assetsnffrgf-a.akamaihd.net/assets/ct/7daa2ed27f/images/siteLogo-jworg-large.svg);
+    background-size: 100px 80px;
+    height: 80px;
+    width: 100px;
+    z-index: -1;
+    opacity: 1;
+    transition: 5s ease;
+}
+.logostatic:hover{background: transparent; opacity: 0; transition: 2s;}
 .logo{
     position: relative;
     display: flex;
     height: 80px;
-    width: 80px; 
+    width: 100px; 
     transform-style: preserve-3d;
     transform: rotateY(360deg) rotateX(-180deg);
     transition: 1000ms ease-in-out;
@@ -87,9 +98,8 @@ body{
     position: absolute;
     height: 80px;
     width: 80px; 
-    background-color: #4a6da7;
-    background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/ct/7daa2ed27f/images/siteLogo-jworg-large.svg);
-    background-size: 80px 85px;
+    background: url(https://assetsnffrgf-a.akamaihd.net/assets/ct/7daa2ed27f/images/siteLogo-jworg-large.svg);
+    background-size: 100px 80px;
 }
 .logo div:nth-child(1){  transform: translateZ(40px) rotate(180deg);  }
 .logo div:nth-child(2){  transform: rotateX(180deg) translateZ(40px);  }
@@ -100,7 +110,7 @@ body{
 /* Animation for the logo ends here! */
 
 .carousel-inner{  text-shadow: 2px 2px 6px rgba(0, 0, 0, 1), -2px -2px 4px rgba(0, 0, 0, 1);  }
-.slider-txt{  
+.slider-link{  
     color: white;  
     text-decoration: none;
 }
@@ -186,8 +196,21 @@ a:hover{
     .logoanimation{  margin-top: -50px;  }
     .news{  margin-top: 0px;  }
     .offcanvas{  --bs-offcanvas-width: 100%;  }
+    .carousel-control-prev{  height: 60%;  }
+    .carousel-control-next{  height: 60%;  }
+    .carousel-indicators{
+        margin: 5px auto;
+    }
+    .carousel-caption{
+        display: block;
+        position: unset;
+        margin: 0 1px;
+        padding: 10px 5px;
+        background-color: #292929;
+        border: 1px solid white;
+    }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 0px) {
     .d-md-block {  display: block !important;  }
 }
