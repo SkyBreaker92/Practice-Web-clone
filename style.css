@@ -79,27 +79,31 @@ body{
     background-size: 100px 80px;
     height: 80px;
     width: 100px;
-    z-index: -1;
+    z-index: 20;
     opacity: 1;
-    transition: 5s ease;
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 2s;
+    pointer-events: auto;
 }
-.logostatic:hover{background: transparent; opacity: 0; transition: 2s;}
+.logoanimation:hover .logostatic{opacity: 0; pointer-events: none; transition-delay: 0ms;}
 .logo{
     position: relative;
     display: flex;
     height: 80px;
     width: 100px; 
+    opacity: 1 !important;
     transform-style: preserve-3d;
     transform: rotateY(360deg) rotateX(-180deg);
     transition: 1000ms ease-in-out;
 }
-.logo:hover{  transform: rotateY(90deg) rotateX(0deg);  }
+.logo:hover{  transform: rotateY(90deg) rotateX(0deg); opacity: 1 !important; }
 .logo div{
     position: absolute;
     height: 80px;
     width: 80px; 
     background: url(https://assetsnffrgf-a.akamaihd.net/assets/ct/7daa2ed27f/images/siteLogo-jworg-large.svg);
     background-size: 100px 80px;
+    opacity: 1 !important;
 }
 .logo div:nth-child(1){  transform: translateZ(40px) rotate(180deg);  }
 .logo div:nth-child(2){  transform: rotateX(180deg) translateZ(40px);  }
