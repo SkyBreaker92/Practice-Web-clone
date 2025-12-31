@@ -43,7 +43,7 @@
                         <span class="icon">&#x1F523;</span> 
                         <span class="btn-text">Language</span>
                     </button>
-                    <button class="btn btn-sm btn-outline-secondary" type="button">
+                    <button class="btn btn-sm btn-outline-secondary" type="button" onclick="openModalLogin()">
                         <span class="icon">&#x1F500;</span> 
                         <span class="btn-text">Log&nbsp;In</span>
                     </button>
@@ -165,8 +165,24 @@
         </div>
       </div>
     </section>
-    
-    
+
+  <!-- dialog for the login interface -->
+  <section class="loginmodal">
+    <dialog id="myLogin">
+      <form method="dialog">
+        <p>
+          <label>User: <input type="text" id="userInput"></label>
+        </p>
+        <p>
+          <label>Pass: <input type="password" id="passInput"></label>
+        </p>
+        <menu>
+          <button value="cancel">Cancel</button>
+          <button id="btnConfirm" value="default">Sign in</button>
+        </menu>
+      </form>
+    </dialog>
+  </section>
 
     <!-- Javascript link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
